@@ -1,0 +1,12 @@
+[package]
+name = "learning-rust"
+authors = ["Edson Lima Monteiro <boni@usp.br>"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror = "1"
+rand = "0.8.5"
+
+# [dev-dependecies]
+# anyhow = "1"
