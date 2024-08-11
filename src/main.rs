@@ -3,15 +3,42 @@
 // Definir o modulo prelude
 pub mod prelude;
 
-use prelude::*;
+use prelude::*
+;
+fn main(){
 
-fn main() {
+    //secret_number();
+    casting_types();
+
+}
+
+
+fn casting_types(){
+
+    let g:f32 ;
+    g = -4.99;
+    let h = g as i32;
+
+    let c = "1234";
+
+    let c = 1234;
+
+    println!{"\n g = {}", g};
+
+    println!{"\n h = {}", h};
+
+    println!{"\n g = {}", g};
+
+    println!{"\n c = {}", c};
+}
+
+
+fn secret_number(){
     println!("\n\tProgramar é legal!\n\n");
 
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
     println!("\tO número secreto é: {secret_number}\n");
-
 
     loop {
         // Prompt de entrada com tabulação
@@ -38,5 +65,4 @@ fn main() {
             }
         }
     }
-
 }
